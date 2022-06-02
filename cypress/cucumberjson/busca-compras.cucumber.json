@@ -1,0 +1,90 @@
+[
+  {
+    "description": "  Como um cliente quero fazer uma busca pelo produto desejado\n  adicionar ao carrinho e confirmar se o produto está na tela de pagamento",
+    "keyword": "Feature",
+    "name": "Buscar por um produto",
+    "line": 1,
+    "id": "buscar-por-um-produto",
+    "tags": [],
+    "uri": "busca-compras.feature",
+    "elements": [
+      {
+        "id": "buscar-por-um-produto;busca-de-produtos",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Busca de produtos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "que esteja no site do Shoestok",
+            "result": {
+              "status": "passed",
+              "duration": 4406000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "no campo de busca digito por um produto",
+            "result": {
+              "status": "passed",
+              "duration": 531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "o sistema apresenta todos os produtos",
+            "result": {
+              "status": "failed",
+              "duration": 335000000,
+              "error_message": "CypressError: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > visible\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:155500:76)\n    at assertDom (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:176616:26)\n    at assert (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:176622:5)\n    at Assertion.<anonymous> (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:176724:14)\n    at Assertion.propertyGetter (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:103013:29)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:104451:22)\n    at applyChainer (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:159958:25)\n    at https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:160016:16\n    at arrayReduce (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:41485:21)\n    at Function.reduce (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:50537:14)\n    at applyChainers (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:159993:68)\nFrom previous event:\n    at Context.shouldFn (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:160022:63)\n    at Context.should (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:160041:23)\n    at Context.<anonymous> (https://www.shoestock.com.br/__cypress/runner/cypress_runner.js:178437:19)\nFrom Your Spec Code:\n    at Context.eval (https://www.shoestock.com.br/__cypress/tests?p=cypress\\integration\\busca-compras.feature:52:27)\n    at Context.resolveAndRunStepDefinition (https://www.shoestock.com.br/__cypress/tests?p=cypress\\integration\\busca-compras.feature:10587:29)\n    at Context.eval (https://www.shoestock.com.br/__cypress/tests?p=cypress\\integration\\busca-compras.feature:9908:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "ao selecionar o produto desejado",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "clicar em comprar",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "será direcionado para o carrinho",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "validar se esteja na tela de pagamento",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
